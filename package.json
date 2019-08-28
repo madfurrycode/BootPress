@@ -1,0 +1,57 @@
+{
+  "name": "Bootpress",
+  "version": "3.0.4",
+  "description": "Bootpress theme development. built on top of AWPS from alecaddd.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "lint": "eslint \"./**/*.js\""
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.18",
+    "babel-preset-react": "^6.24.1",
+    "bootstrap": "^4.3.1",
+    "browser-sync": "^2.23.6",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "cross-env": "^5.1",
+    "eslint": "^5.13.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jquery": "^3.3.1",
+    "laravel-mix": "^4.0.14",
+    "laravel-mix-tailwind": "^0.1.0",
+    "lodash": "^4.17.4",
+    "popper.js": "^1.14.7",
+    "resolve-url-loader": "^3.0.0",
+    "sass": "^1.17.0",
+    "sass-loader": "7.*",
+    "tailwindcss": "^0.7.4",
+    "vue": "^2.6.6",
+    "vue-template-compiler": "^2.6.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madfurrycode/BootPress.git"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "starter"
+  ],
+  "author": "Tristan Elliott (http://tristanelliott.co.za)",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/madfurrycode/BootPress#readme",
+  "dependencies": {
+    "eslint-config-wordpress": "^2.0.0",
+    "normalize-scss": "^7.0.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

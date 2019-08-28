@@ -1,0 +1,29 @@
+{
+	"name": "alecaddd/Bootpress",
+	"description": "Alecaddd WordPress Starter Theme for savvy developers",
+	"keywords": ["WordPress", "Theme", "Starter"],
+	"homepage": "https://github.com/Alecaddd/Bootpress",
+	"license": "GPL-3.0",
+	"version": "3.0.5",
+	"authors": [
+		{
+			"name": "Alessandro Castellani",
+			"email": "me@alecaddd.com",
+			"homepage": "http://alecaddd.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"vlucas/phpdotenv": "^3.3"
+	},
+	"require-dev": {
+		"jakub-onderka/php-parallel-lint": "^1.0.0",
+		"phpcompatibility/phpcompatibility-wp": "^2.0.0",
+		"wp-coding-standards/wpcs": "^2.0.0",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.5.0"
+	},
+	"autoload": {
+		"psr-4": { "Bootpress\\": "./inc" },
+		"files": [ "./inc/Helpers.php" ]
+	}
+}
